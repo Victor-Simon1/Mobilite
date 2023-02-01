@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hello_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_tv"
+        android:textColor="#DF3A3A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/black_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:text="Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_tv" />
+
+    <Button
+        android:id="@+id/blue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+
+        android:backgroundTint="#01AFFF"
+        android:backgroundTintMode="add"
+        android:text="Blue"
+        app:layout_constraintEnd_toEndOf="@+id/black_btn"
+        app:layout_constraintTop_toBottomOf="@+id/black_btn" />
+
+    <Button
+        android:id="@+id/red_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#FA1212"
+        android:backgroundTintMode="add"
+        android:text="Red"
+        app:layout_constraintEnd_toEndOf="@+id/blue_btn"
+        app:layout_constraintTop_toBottomOf="@+id/blue_btn" />
+
+    <Button
+        android:id="@+id/green_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#4AAF16"
+        android:backgroundTintMode="add"
+        android:onClick="XMLChangeColor"
+        android:text="Green"
+        app:layout_constraintStart_toStartOf="@+id/red_btn"
+        app:layout_constraintTop_toBottomOf="@+id/red_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
