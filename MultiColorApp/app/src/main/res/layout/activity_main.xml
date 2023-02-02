@@ -2,8 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:backgroundTintMode="multiply"
     tools:context=".MainActivity">
 
     <TextView
@@ -26,7 +30,7 @@
 
         android:backgroundTint="#000000"
         android:backgroundTintMode="add"
-        android:text="Black"
+        android:text="@string/black_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hello_tv" />
@@ -40,7 +44,7 @@
 
         android:backgroundTint="#01AFFF"
         android:backgroundTintMode="add"
-        android:text="Blue"
+        android:text="@string/blue_btn"
         app:layout_constraintEnd_toEndOf="@+id/black_btn"
         app:layout_constraintTop_toBottomOf="@+id/black_btn" />
 
@@ -52,7 +56,7 @@
         android:layout_marginEnd="3dp"
         android:backgroundTint="#FA1212"
         android:backgroundTintMode="add"
-        android:text="Red"
+        android:text="@string/red_btn"
         app:layout_constraintEnd_toEndOf="@+id/blue_btn"
         app:layout_constraintTop_toBottomOf="@+id/blue_btn" />
 
@@ -61,12 +65,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#4AAF16"
-        android:backgroundTintMode="add"
+        android:backgroundTintMode="src_over"
         android:onClick="XMLChangeColor"
-        android:text="Green"
+        android:text="@string/green_btn"
         app:layout_constraintStart_toStartOf="@+id/red_btn"
         app:layout_constraintTop_toBottomOf="@+id/red_btn" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/radioFont"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="63dp">
+
+        <RadioButton
+            android:id="@+id/radioFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/font_btn"/>
+
+        <RadioButton
+            android:id="@+id/radioBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/background_btn" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

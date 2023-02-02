@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">MultiColorApp</string>
     <string name="hello_tv">Hello</string>
+    <string name="red_btn">RED</string>
+    <string name="black_btn">BLACK</string>
+    <string name="blue_btn">BLUE</string>
+    <string name="green_btn">GREEN</string>
+    <string name="font_btn">FONT</string>
+    <string name="background_btn">BACKGROUND</string>
 </resources>

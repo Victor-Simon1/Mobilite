@@ -2,4 +2,10 @@
 <resources>
     <string name="app_name">MultiColorApp</string>
     <string name="hello_tv">Bonjour</string>
+    <string name="red_btn">ROUGE</string>
+    <string name="black_btn">NOIRE</string>
+    <string name="blue_btn">BLEU</string>
+    <string name="green_btn">VERT</string>
+    <string name="font_btn">POLICE</string>
+    <string name="background_btn">FOND</string>
 </resources>
