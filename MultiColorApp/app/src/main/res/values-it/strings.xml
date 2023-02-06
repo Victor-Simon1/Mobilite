@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MultiColorApp</string>
+    <string name="app_name">MultiColorAppIT</string>
     <string name="hello_tv">Buongiorno</string>
     <string name="red_btn">ROSSO</string>
     <string name="black_btn">NERO</string>

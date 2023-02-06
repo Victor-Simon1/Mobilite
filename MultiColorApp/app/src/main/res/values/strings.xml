@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MultiColorApp</string>
+    <string name="app_name">MultiColorAppEN</string>
     <string name="hello_tv">Hello</string>
     <string name="red_btn">RED</string>
     <string name="black_btn">BLACK</string>

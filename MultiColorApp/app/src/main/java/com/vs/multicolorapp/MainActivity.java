@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mode = R.id.radioFont;
         setContentView(R.layout.activity_main);
-
         Button myButton = (Button)findViewById(R.id.black_btn);
         OnClickListener myListener = new OnClickListener() {
             @Override

@@ -73,26 +73,34 @@
         app:layout_constraintStart_toStartOf="@+id/red_btn"
         app:layout_constraintTop_toBottomOf="@+id/red_btn" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checkedButton="@id/radioFont"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="63dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <RadioButton
-            android:id="@+id/radioFont"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="409dp"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/font_btn"/>
+            android:layout_marginTop="63dp"
+            android:checkedButton="@id/radioFont"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <RadioButton
-            android:id="@+id/radioBackground"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/background_btn" />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radioFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/font_btn" />
+
+            <RadioButton
+                android:id="@+id/radioBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/background_btn" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
