@@ -8,4 +8,5 @@
     <string name="green_btn">VERDE</string>
     <string name="font_btn">CARATTERE</string>
     <string name="background_btn">SFONDO</string>
+    <string name="toast">Cambio di colore</string>
 </resources>

@@ -7,4 +7,5 @@
     <string name="green_btn">GREEN</string>
     <string name="font_btn">FONT</string>
     <string name="background_btn">BACKGROUND</string>
+    <string name="toast">Color change</string>
 </resources>
