@@ -1,5 +1,7 @@
 package com.vs.gestioncontactapp;
 
+import java.util.Random;
+
 public class Contact
 {
     private String name;
@@ -12,11 +14,17 @@ public class Contact
 
     Contact(String pName, String pFirstName, String pBirthDate, int pPicture)
     {
+        Random r = new Random();
         name = pName;
         firstname = pFirstName;
-        birthDate = pBirthDate;
+        birthDate = ""+(r.nextInt(30-1) + 1)+"/" + (r.nextInt(12-1) + 1) +"/"+ (r.nextInt(99-60) + 60);
         picture = pPicture;
         isClicked = false;
+    }
+
+    public String PrintToast()
+    {
+        return  firstname + name;
     }
     @Override
     public String toString() {
